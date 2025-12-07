@@ -30,7 +30,7 @@ const App = () => {
         </div>
 
       </section>
-
+      {/* skills section */}
       <section className="">
 
       </section>

@@ -1,10 +1,10 @@
 const ExperienceCard = ({ company, role, description, logo }) => {
   return (
-    <div className="w-full max-w-[700px] min-h-[350px] sm:h-[430px] rounded-3xl border-2 border-black p-6 bg-white overflow-hidden 
+    <div className="w-full max-w-[700px] min-h-[350px] sm:h-[400px] rounded-3xl border-2 border-black p-6 bg-white overflow-hidden 
       grid grid-cols-1 sm:grid-cols-3 gap-6">
-      <div className="order-1 sm:order-3 flex items-center justify-center">
-        <div className="border-2 border-white rounded-full p-2 
-          w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center">
+      <div className="order-1 sm:order-3 flex items-start justify-center">
+        <div className="border-2 border-white rounded-xl p-2 
+          w-24 h-24 sm:w-32 sm:h-32 flex items-start justify-center">
           <img
             src={logo}
             alt="logo"
