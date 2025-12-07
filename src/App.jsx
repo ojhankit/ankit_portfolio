@@ -1,6 +1,8 @@
 import InfoCard from "./components/InfoCard";
 import ExperienceCard from "./components/ExperienceCard";
+import SkillsCard from "./components/SkillsCard";
 import { EXPERIENCES } from "./constant/experience";
+import { LANGUAGES, FRAMEWORKS, TOOLS } from "./constant/skill";
 import "@fontsource/inter";
 
 const App = () => {
@@ -31,8 +33,13 @@ const App = () => {
 
       </section>
       {/* skills section */}
-      <section className="">
-
+      <section className="w-full min-h-screen px-6 py-12 flex flex-col items-center">
+        <h1 className="text-4xl font-bold mb-12">Technical Skills</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl">
+          <SkillsCard title="Programming Languages" skills={LANGUAGES} />
+          <SkillsCard title="Frameworks & Libraries" skills={FRAMEWORKS} />
+          <SkillsCard title="Tools & Platforms" skills={TOOLS} />
+        </div>
       </section>
     </main>
   );
